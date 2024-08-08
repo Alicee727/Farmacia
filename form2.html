@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de Remédios</title>
+    <script type="module" src="script.js" defer></script>
+</head>
+<body>
+    <h1>Cadastro de Remédios</h1>
+    <!-- Formulário de Cadastro -->
+    <form id="formRemedio">
+        <label for="nome">Nome do Remédio:</label>
+        <input type="text" id="nome" required><br><br>
+        <label for="medida">Medida:</label>
+        <input type="text" id="medida" required><br><br>
+        <label for="quantidade">Quantidade na Caixa:</label>
+        <input type="number" id="quantidade" required><br><br>
+        <div class="form-group">
+            <button type="button" id="btnCadastrar">Cadastrar</button><br><br>
+            <button type="button" id="btnVerRemedios">Ver Remédios</button><br><br>
+            <button type="button" id="btnAtualizar">Atualizar</button><br><br>
+            <button type="button" id="btnDeletar">Deletar</button>
+        </div>
+    </form>
+    <ul id="listaRemedios"></ul>
+</body>
+</html>
