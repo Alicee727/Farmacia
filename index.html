@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="content_container">
+        <div id="form_container">
+            <div id="form_header_container">
+                <h2 id="form_header">Faça login</h2>
+            </div>
+            <div id="form_content_container">
+                <div id="form_content_inner_container">
+                    <input type="text" id="nome" placeholder="Nome">
+                    <input type="email" id="email" placeholder="Email">
+                    <input type="password" id="cpf" placeholder="Senha (CPF)">
+
+                    <div>
+                        <input type="radio" id="funcionario" name="tipo" value="Funcionario">
+                        <label for="funcionario">Funcionário</label>
+                        <input type="radio" id="cliente" name="tipo" value="Cliente">
+                        <label for="cliente">Cliente</label>
+                    </div>
+
+                    <div id="button_container">
+                        <button id="loginButton">Logar</button>
+                        <button id="registerButton">Cadastre-se</button>
+                    </div>
+
+                    <div id="feedback" class="feedback" style="margin-top: 10px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
