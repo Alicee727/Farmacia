@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Produtos Disponíveis</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Remédio</title>
+    <link rel="stylesheet" href="styles1.css">
 </head>
 <body>
-    <div id="content_container">
-        <h2 id="form_header">Produtos Disponíveis</h2>
-        <div id="produtos_container"></div>
-    </div>
+    <div class="container">
+        <h1>Buscar Remédio</h1>
+        <label for="nomeBusca">Nome do Remédio:</label>
+        <input type="text" id="nomeBusca" placeholder="Digite o nome do remédio">
+        <button id="btnBuscar">Buscar</button>
 
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
-    <script src="script.js"></script>
+        <h2>Resultado da Busca</h2>
+        <p id="resultado"></p>
+    </div>
+    <script type="module" src="busca.js"></script>
 </body>
 </html>
