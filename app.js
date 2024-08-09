@@ -51,7 +51,7 @@ class Cliente extends Usuario {
     }
 }
 
-// Funções de autenticação e CRUD
+// Funções de autenticação
 document.getElementById('loginButton').addEventListener('click', async () => {
     const email = document.getElementById('email').value;
     const senha = document.getElementById('cpf').value;

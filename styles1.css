@@ -2,6 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    background-image: url(img/fundo.png);
     margin: 0;
     padding: 0;
     display: flex;
@@ -27,7 +28,16 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Estilos para o rótulo e input */
+/* Estilos para o contêiner de busca */
+.search-container {
+    margin-bottom: 15px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+}
+
 label {
     display: block;
     font-size: 14px;
@@ -36,20 +46,25 @@ label {
 }
 
 input[type="text"] {
-    width: 100%;
+    flex: 1;
     padding: 10px;
-    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
     box-sizing: border-box;
 }
 
+.lupa {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
 /* Estilos para o botão */
 button {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #38515c;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -59,7 +74,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #2c3e50;
 }
 
 /* Estilos para o resultado da busca */
